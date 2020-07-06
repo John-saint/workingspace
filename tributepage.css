@@ -1,0 +1,176 @@
+#main {
+    padding: 15px;
+    margin: 10px 15px;
+    color: #f3ab6f; }
+  
+  body {
+    clear: both;
+    font-family: sans-serif;
+    margin: auto;
+    align-content: center;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: sticky;
+  background-size: cover; }
+  
+  #title {
+    font-family: Roboto;
+    text-align: center;
+    padding: 10px; }
+  
+  #img-div {
+    padding: 10px;
+    margin: 5px; }
+  
+  #image {
+    border-radius: 10%;
+    margin: 10px 10px 0;
+    max-width: 600px; }
+  
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*@media (max-width: 500px) {
+    #image {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "header header"
+        "advert content"
+        "footer footer"; 
+    }
+  }*/
+  
+  #img-caption { 
+    font-size: 11px; 
+    color: rgb(213, 167, 31); 
+    padding: 0; 
+    margin: 5px 15px;
+    max-width: 500px; }
+  
+  .center {
+    text-align: center;
+    text-margin: auto; }
+  
+  #wiki, #personal-site { color: #f3ab6f; }
+  
+  #wiki:hover { color: blue; }
+  #personal-site:hover { color: pink; }
+  
+  div.sticky { /*obtained from w3schools*/
+    position: sticky;
+    bottom: 0;
+    background-color: lightgray;
+    padding: 30px;
+    font-size: 15px; }
+  
+  .guitar {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    animation-name: guitar-strumming;
+    animation-duration: 2000ms;
+    animation-iteration-count: 100;
+  }
+  
+  @keyframes guitar-strumming {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.8) rotate(-90deg);
+    }
+  }
+  
+  #tribute-info { /*textual content describing the subject of the tribute page*/
+    margin: 10px 20px 10px 20px;
+    display: inline-block; }
+  
+  /* Below are still empty codes*/
+  @media (max-width: 350px) {
+    :root {}}
+  #tribute-link {}
+  
+  /* These codes below, I might consider to put into the html page. These codes are taken from freeCodeCamp "CSS Grid" learn curriculum"*/
+  .box {
+      border-style: solid;
+      border-color: black;
+      border-width: 5px;
+      text-align: center; }
+  
+  [type='checkbox'] {
+      margin: 10px 0 15px 0; }
+  
+  .item1 {
+      background: LightSkyBlue;
+      grid-area: header; }
+  
+  .blue-box {
+      background-color: blue;
+      color: #fff;
+      margin: 40px 20px 20px 40px; }
+  
+  .item2 {
+      background: LightSalmon;
+      grid-area: advert; }
+  
+  .item3 {
+      background: PaleTurquoise;
+      grid-area: content; }
+  
+  .item4 {
+      background: lightpink;
+      grid-area: footer; }
+  
+  .container {
+      font-size: 1.5em;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px auto 1fr auto;
+      grid-gap: 10px;
+      grid-template-areas:
+        "header"
+        "advert"
+        "content"
+        "footer";
+  }
+  
+  @media (min-width: 300px){
+    .container{
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    }
+  }
+  
+  @media (min-width: 400px){
+    .container{
+      grid-template-areas:
+        "header header"
+        "advert content"
+        "footer footer";
+    }
+  }
+  
+  /*Codes below are obtained from developer mozilla site aka MDN*/
+  #my-div {
+    margin: 2em; background: #ccc;
+    width: 300px; height: 50px; }
+  
+  #part-1, #part-2 {
+    display: inline-block; width: 150px;
+    margin: 0; padding: 1px; }
+  
